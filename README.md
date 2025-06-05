@@ -39,7 +39,7 @@ Pipeline: `text-classification` usando `transformers`
 `venv310\Scripts\activate`
 `pip install -r requirements.txt`
 
-### 3. Configurar variable de entorno
+##  3. Configurar variable de entorno
 Crea un archivo .env con tu token de Hugging Face:
 
 HF_TOKEN=tu_token_aqui
