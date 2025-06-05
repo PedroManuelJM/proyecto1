@@ -35,9 +35,9 @@ Pipeline: `text-classification` usando `transformers`
 
 ### 2. Crear entorno virtual e instalar dependencias
 
-`py -3.10 -m venv venv310`
-`venv310\Scripts\activate`
-`pip install -r requirements.txt`
+-py -3.10 -m venv venv310
+-venv310\Scripts\activate
+-pip install -r requirements.txt
 
 ##  3. Configurar variable de entorno
 Crea un archivo .env con tu token de Hugging Face:
