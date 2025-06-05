@@ -71,14 +71,12 @@ http://0.0.0.0:7860/predict
 Ejemplo:
 
 POST /predict
-Body:
 
-{
+Body:{
   "text": "Me encantó el producto"
 }
 
-Respuesta
-{
+Respuesta{
   "etiqueta": "POSITIVO",
   "confianza": 0.9876
 }
