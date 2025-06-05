@@ -50,21 +50,26 @@ HF_TOKEN=tu_token_aqui
 python app.py
 
 ### 5. Probar la API
-http://0.0.0.0:7860/  
 
-GET /
+### GET /
 Devuelve un mensaje de bienvenida para comprobar que la API está funcionando.
+
+http://0.0.0.0:7860/ 
+
 Respuesta:
 {
   "message": "API funcionando."
 }
 
-POST /predict
+ 
+
+### POST /predict
 Recibe un comentario en formato JSON y devuelve su clasificación.
 
-Ejemplo de request:
-
 http://0.0.0.0:7860/predict 
+
+Ejemplo:
+
 POST /predict
 Body:
 
@@ -72,8 +77,16 @@ Body:
   "text": "Me encantó el producto"
 }
 
+Respuesta
+{
+  "etiqueta": "POSITIVO",
+  "confianza": 0.9876
+}
+
 ### 🧪 Tests
+
 Puedes correr pruebas con:
+
 pytest test.py
 
 
