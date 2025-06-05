@@ -72,11 +72,11 @@ Ejemplo:
 
 POST /predict
 
-Body:{
+Body: {
   "text": "Me encantó el producto"
 }
 
-Respuesta{
+Respuesta: {
   "etiqueta": "POSITIVO",
   "confianza": 0.9876
 }
