@@ -24,6 +24,7 @@ Este proyecto es una API creada con FastAPI que clasifica comentarios de texto u
  ├── test.py # Archivo de pruebas (si tienes uno)
  
  └── README.md # Este archivo
+ 
 ## 🧠 Modelo usado
 Modelo: `pedrojm/modelv2_clasificacioncomentario`  
 Pipeline: `text-classification` usando `transformers`
