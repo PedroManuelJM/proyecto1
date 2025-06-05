@@ -15,7 +15,8 @@ Este proyecto es una API creada con FastAPI que clasifica comentarios de texto u
 - [Pytest](https://docs.pytest.org/)
 
 ## 📁 Estructura del Proyecto
-.├── app.py # Archivo principal con la API
+.
+├── app.py # Archivo principal con la API
  ├── .env # Variables de entorno 
  ├── requirements.txt # Dependencias del proyecto
  ├── test.py # Archivo de pruebas (si tienes uno)
