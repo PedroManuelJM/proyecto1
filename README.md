@@ -1,6 +1,26 @@
 # Clasificador de Comentarios - API con FastAPI y HuggingFace 🤖🚀
 
-Este proyecto es una API creada con FastAPI que clasifica comentarios de texto utilizando un modelo de Hugging Face.
+Este proyecto es una API creada con FastAPI que clasifica comentarios de texto utilizando un modelo entrenado propio y alojado en la plataforam de Hugging Face.
+
+## 🚀 Tecnologías Usadas
+📦 Requisitos
+- Python 3.10+
+- [FastAPI](https://fastapi.tiangolo.com/)
+- [Transformers](https://huggingface.co/docs/transformers/)
+- [Torch (PyTorch)](https://pytorch.org/)
+- [Hugging Face Hub](https://huggingface.co/)
+- [Uvicorn](https://www.uvicorn.org/)
+- [Python-dotenv](https://pypi.org/project/python-dotenv/)
+- [HTTPX](https://www.python-httpx.org/)
+- [Pytest](https://docs.pytest.org/)
+
+## 📁 Estructura del Proyecto
+.
+├── app.py # Archivo principal con la API
+├── .env # Variables de entorno 
+├── requirements.txt # Dependencias del proyecto
+├── test.py # Archivo de pruebas (si tienes uno)
+└── README.md # Este archivo
 
 ## 🧠 Modelo usado
 Modelo: `pedrojm/modelv2_clasificacioncomentario`  
@@ -10,55 +30,46 @@ Pipeline: `text-classification` usando `transformers`
 
 ### 1. Clonar el repositorio
 
-2. Crear entorno virtual e instalar dependencias
+### 2. Crear entorno virtual e instalar dependencias
 
 py -3.10 -m venv venv310
 venv310\Scripts\activate
 pip install -r requirements.txt
 
-3. Configurar variable de entorno
+### 3. Configurar variable de entorno
 Crea un archivo .env con tu token de Hugging Face:
 
 HF_TOKEN=tu_token_aqui
 
-4. Ejecutar la API
+### 4. Ejecutar la API
 python app.py
 
-5. Probar la API
-
+### 5. Probar la API
 http://0.0.0.0:7860/  
 
 GET /
-Respuesta: {"message": "API funcionando. Usa POST en /predict para clasificar un comentario."}
+Devuelve un mensaje de bienvenida para comprobar que la API está funcionando.
+Respuesta:
+{
+  "message": "API funcionando."
+}
+
+POST /predict
+Recibe un comentario en formato JSON y devuelve su clasificación.
+
+Ejemplo de request:
 
 http://0.0.0.0:7860/predict 
 POST /predict
 Body:
 
-json
-Copiar
-Editar
 {
   "text": "Me encantó el producto"
 }
 
-🧪 Tests
+### 🧪 Tests
 Puedes correr pruebas con:
 pytest test.py
 
 
 
-📦 Requisitos
-Python 3.10+
-
-FastAPI
-
-Transformers
-
-Torch
-
-HuggingFace Hub
-
-Uvicorn
-
-Python-dotenv
